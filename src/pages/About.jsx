@@ -1,0 +1,60 @@
+import { useState } from 'react'
+
+function About() {
+  const [imagesLoaded, setImagesLoaded] = useState([false, false])
+
+  const handleImageLoad = (index) => {
+    setImagesLoaded(prev => {
+      const newState = [...prev]
+      newState[index] = true
+      return newState
+    })
+  }
+
+  return (
+    <div className="min-h-screen bg-white py-16 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+          About
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="relative">
+            {!imagesLoaded[0] && (
+              <div className="absolute inset-0 bg-neutral-light animate-pulse rounded-2xl" />
+            )}
+            <img 
+              src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=600&h=600&fit=crop" 
+              alt="ロージーの写真1" 
+              className={`w-full rounded-2xl shadow-lg transition-opacity duration-500 ${
+                imagesLoaded[0] ? 'opacity-100' : 'opacity-0'
+              }`}
+              onLoad={() => handleImageLoad(0)}
+              loading="lazy"
+            />
+          </div>
+          <div className="relative">
+            {!imagesLoaded[1] && (
+              <div className="absolute inset-0 bg-neutral-light animate-pulse rounded-2xl" />
+            )}
+            <img 
+              src="https://images.unsplash.com/photo-1583337130417-6a25332b5d3b?w=600&h=600&fit=crop" 
+              alt="ロージーの写真2" 
+              className={`w-full rounded-2xl shadow-lg transition-opacity duration-500 ${
+                imagesLoaded[1] ? 'opacity-100' : 'opacity-0'
+              }`}
+              onLoad={() => handleImageLoad(1)}
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div className="text-center">
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            元気いっぱいで人懐っこいロージー。お散歩とおやつが大好きなわんこ。
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default About
