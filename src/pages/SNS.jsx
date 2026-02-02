@@ -9,7 +9,7 @@ function SNS() {
           href="https://www.instagram.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-block bg-white px-12 py-6 rounded-full text-xl md:text-2xl font-bold text-primary-dark shadow-xl hover:bg-primary-light hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-DEFAULT"
+          className="inline-block bg-white px-12 py-6 rounded-full text-xl md:text-2xl font-bold text-primary-dark shadow-xl hover:bg-primary-light hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary"
         >
           Instagram
         </a>

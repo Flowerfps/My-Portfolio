@@ -20,7 +20,7 @@ function Navigation() {
         <div className="flex items-center justify-between py-4">
           <Link 
             to="/" 
-            className="text-xl font-bold text-gray-800 hover:text-primary-DEFAULT transition-colors focus:outline-none focus:ring-2 focus:ring-primary-DEFAULT rounded"
+            className="text-xl font-bold text-gray-800 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded"
           >
             ロージー
           </Link>
@@ -28,7 +28,7 @@ function Navigation() {
           {/* モバイルメニューボタン */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-neutral-light focus:outline-none focus:ring-2 focus:ring-primary-DEFAULT"
+            className="md:hidden p-2 rounded-lg hover:bg-neutral-light focus:outline-none focus:ring-2 focus:ring-primary"
             aria-label="メニュー"
             aria-expanded={isOpen}
           >
@@ -47,9 +47,9 @@ function Navigation() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 rounded-full font-bold transition-all focus:outline-none focus:ring-2 focus:ring-primary-DEFAULT ${
+                className={`px-4 py-2 rounded-full font-bold transition-all focus:outline-none focus:ring-2 focus:ring-primary ${
                   location.pathname === item.path
-                    ? 'bg-primary-DEFAULT text-white'
+                    ? 'bg-primary text-white'
                     : 'text-gray-700 hover:bg-primary-light'
                 }`}
               >
@@ -68,9 +68,9 @@ function Navigation() {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-4 py-2 rounded-full font-bold transition-all text-center focus:outline-none focus:ring-2 focus:ring-primary-DEFAULT ${
+                  className={`px-4 py-2 rounded-full font-bold transition-all text-center focus:outline-none focus:ring-2 focus:ring-primary ${
                     location.pathname === item.path
-                      ? 'bg-primary-DEFAULT text-white'
+                      ? 'bg-primary text-white'
                       : 'text-gray-700 hover:bg-primary-light'
                   }`}
                 >

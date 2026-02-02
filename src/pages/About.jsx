@@ -49,7 +49,10 @@ function About() {
         </div>
         <div className="text-center">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-            元気いっぱいで人懐っこいロージー。お散歩とおやつが大好きなわんこ。
+            ジャックラッセルテリアの女の子🎀<br />
+            2024年11月30日生まれ✨<br />
+            2025年2月16日 Welcome Rosie🎉<br />
+            社会人兄姉＆高校生兄に愛でられてわがまま姫に成長中🐶
           </p>
         </div>
       </div>

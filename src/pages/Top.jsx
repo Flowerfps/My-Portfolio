@@ -29,7 +29,7 @@ function Top() {
         </p>
         <Link 
           to="/contact"
-          className="inline-block bg-primary-DEFAULT text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-light"
+          className="inline-block bg-primary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-light"
         >
           お仕事の依頼はこちら
         </Link>

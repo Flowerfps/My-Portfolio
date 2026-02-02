@@ -33,7 +33,7 @@ function Works() {
             <div key={index} className="bg-neutral-light rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
               <div className="relative">
                 {!loadedImages.has(index) && (
-                  <div className="absolute inset-0 bg-neutral-DEFAULT animate-pulse rounded-xl" />
+                  <div className="absolute inset-0 bg-neutral animate-pulse rounded-xl" />
                 )}
                 <img 
                   src={work.image} 

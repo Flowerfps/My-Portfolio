@@ -71,7 +71,7 @@ function Contact() {
               className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 transition-colors ${
                 errors.name 
                   ? 'border-red-400 focus:border-red-500 focus:ring-red-200' 
-                  : 'border-neutral-DEFAULT focus:border-primary-DEFAULT focus:ring-primary-light'
+                  : 'border-neutral focus:border-primary focus:ring-primary-light'
               }`}
               aria-invalid={!!errors.name}
               aria-describedby={errors.name ? 'name-error' : undefined}
@@ -95,7 +95,7 @@ function Contact() {
               className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 transition-colors ${
                 errors.email 
                   ? 'border-red-400 focus:border-red-500 focus:ring-red-200' 
-                  : 'border-neutral-DEFAULT focus:border-primary-DEFAULT focus:ring-primary-light'
+                  : 'border-neutral focus:border-primary focus:ring-primary-light'
               }`}
               aria-invalid={!!errors.email}
               aria-describedby={errors.email ? 'email-error' : undefined}
@@ -119,7 +119,7 @@ function Contact() {
               className={`w-full px-4 py-3 border-2 rounded-xl focus:outline-none focus:ring-2 transition-colors resize-none ${
                 errors.message 
                   ? 'border-red-400 focus:border-red-500 focus:ring-red-200' 
-                  : 'border-neutral-DEFAULT focus:border-primary-DEFAULT focus:ring-primary-light'
+                  : 'border-neutral focus:border-primary focus:ring-primary-light'
               }`}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? 'message-error' : undefined}
@@ -133,7 +133,7 @@ function Contact() {
           <button 
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary-DEFAULT text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-light disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="w-full bg-primary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-light disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             {isSubmitting ? '送信中...' : '送信する'}
           </button>

@@ -26,7 +26,7 @@ function Gallery() {
           {images.map((src, index) => (
             <div key={index} className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all">
               {!loadedImages.has(index) && (
-                <div className="absolute inset-0 bg-neutral-DEFAULT animate-pulse rounded-xl" />
+                <div className="absolute inset-0 bg-neutral animate-pulse rounded-xl" />
               )}
               <img 
                 src={src} 
