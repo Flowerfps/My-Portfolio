@@ -12,7 +12,7 @@ function Top() {
             <div className="absolute inset-0 bg-gray-100 animate-pulse" />
           )}
           <img 
-            src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=1200&h=900&fit=crop" 
+            src="/images/top-main.jpg" 
             alt="ロージー" 
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               imageLoaded ? 'opacity-100' : 'opacity-0'
