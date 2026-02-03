@@ -27,7 +27,7 @@ function Top() {
             ロージーちゃんの成長記録
           </h1>
           <p className="text-base md:text-lg text-gray-600 mb-8 font-light leading-relaxed">
-            元気いっぱい！みんなを笑顔にするわんこ
+            わん!わん!わん!わん!わん!
           </p>
           <Link 
             to="/contact"
