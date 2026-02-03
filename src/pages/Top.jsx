@@ -24,7 +24,7 @@ function Top() {
         </div>
         <div className="max-w-4xl mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl md:text-5xl font-rounded font-normal text-gray-900 mb-4 tracking-tight">
-            ロージー
+            ロージーちゃんの成長記録
           </h1>
           <p className="text-base md:text-lg text-gray-600 mb-8 font-light leading-relaxed">
             元気いっぱい！みんなを笑顔にするわんこ
@@ -38,7 +38,7 @@ function Top() {
         </div>
         <div className="max-w-4xl mx-auto px-4 pb-20 text-center">
           <p className="text-base text-gray-600 mb-6 font-light">
-            ありがとうございました
+          
           </p>
           <a 
             href="https://www.instagram.com" 

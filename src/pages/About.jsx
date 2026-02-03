@@ -51,9 +51,7 @@ function About() {
           <p className="text-base md:text-lg text-gray-700 leading-relaxed font-light">
             ジャックラッセルテリアの女の子🎀<br />
             2024年11月30日生まれ✨<br />
-            2025年2月16日 Welcome Rosie🎉<br />
-            社会人兄姉＆高校生兄に愛でられてわがまま姫に成長中🐶
-          </p>
+            2025年2月16日 Welcome Rosie🎉<br /></p>
         </div>
       </div>
     </div>
