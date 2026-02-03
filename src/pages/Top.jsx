@@ -5,31 +5,31 @@ function Top() {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary-light to-accent-light flex items-center justify-center">
-      <div className="text-center px-4 max-w-4xl mx-auto">
-        <div className="mb-8 relative">
+    <div className="min-h-screen bg-white flex items-center justify-center px-4">
+      <div className="text-center max-w-4xl mx-auto w-full">
+        <div className="mb-12 relative aspect-[4/3] max-w-2xl mx-auto bg-gray-100">
           {!imageLoaded && (
-            <div className="absolute inset-0 bg-neutral-light animate-pulse rounded-3xl" />
+            <div className="absolute inset-0 bg-gray-100 animate-pulse" />
           )}
           <img 
             src="https://images.unsplash.com/photo-1551717743-49959800b1f6?w=800&h=600&fit=crop" 
             alt="ロージーの写真" 
-            className={`w-full max-w-2xl mx-auto rounded-3xl shadow-2xl transition-opacity duration-500 ${
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               imageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
             onLoad={() => setImageLoaded(true)}
             loading="lazy"
           />
         </div>
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-4 drop-shadow-md">
+        <h1 className="text-5xl md:text-display font-rounded font-medium text-primary mb-6 tracking-tight">
           ロージー
         </h1>
-        <p className="text-xl md:text-2xl text-gray-700 mb-8 drop-shadow-sm">
+        <p className="text-lg md:text-xl text-gray-600 mb-12 font-light">
           元気いっぱい！みんなを笑顔にするわんこ
         </p>
         <Link 
           to="/contact"
-          className="inline-block bg-primary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold shadow-lg hover:bg-primary-dark hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-primary-light"
+          className="inline-block bg-primary text-white px-8 py-3 text-base font-medium hover:bg-primary-dark transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           お仕事の依頼はこちら
         </Link>

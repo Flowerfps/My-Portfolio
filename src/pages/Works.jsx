@@ -23,29 +23,29 @@ function Works() {
   }
 
   return (
-    <div className="min-h-screen bg-white py-16 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+    <div className="min-h-screen bg-white py-20 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-rounded font-medium text-center mb-16 text-primary tracking-tight">
           Works / PR実績
         </h2>
-        <div className="space-y-12">
+        <div className="space-y-16">
           {works.map((work, index) => (
-            <div key={index} className="bg-neutral-light rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="relative">
+            <div key={index} className="w-full">
+              <div className="relative mb-6 aspect-[3/2] bg-gray-100">
                 {!loadedImages.has(index) && (
-                  <div className="absolute inset-0 bg-neutral animate-pulse rounded-xl" />
+                  <div className="absolute inset-0 bg-gray-100 animate-pulse" />
                 )}
                 <img 
                   src={work.image} 
                   alt={`ロージーの実績 ${index + 1}`}
-                  className={`w-full rounded-xl mb-4 transition-opacity duration-500 ${
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
                     loadedImages.has(index) ? 'opacity-100' : 'opacity-0'
                   }`}
                   onLoad={() => handleImageLoad(index)}
                   loading="lazy"
                 />
               </div>
-              <p className="text-lg text-gray-700 text-center">
+              <p className="text-base md:text-lg text-gray-600 text-center font-light">
                 {work.comment}
               </p>
             </div>

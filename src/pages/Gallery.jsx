@@ -17,16 +17,16 @@ function Gallery() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-light py-16 px-4">
+    <div className="min-h-screen bg-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-rounded font-medium text-center mb-16 text-primary tracking-tight">
           Gallery
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {images.map((src, index) => (
-            <div key={index} className="relative aspect-[3/4] overflow-hidden rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all">
+            <div key={index} className="relative aspect-[3/4] overflow-hidden bg-gray-100">
               {!loadedImages.has(index) && (
-                <div className="absolute inset-0 bg-neutral animate-pulse rounded-xl" />
+                <div className="absolute inset-0 bg-gray-100 animate-pulse" />
               )}
               <img 
                 src={src} 
