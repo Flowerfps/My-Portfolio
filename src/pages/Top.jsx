@@ -17,6 +17,7 @@ function Top() {
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               imageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
+            style={{ imageRendering: 'high-quality' }}
             onLoad={() => setImageLoaded(true)}
             loading="eager"
           />

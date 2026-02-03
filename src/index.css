@@ -21,4 +21,10 @@
   .font-rounded {
     font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
   }
+
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+  }
 }
