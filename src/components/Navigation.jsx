@@ -10,7 +10,6 @@ function Navigation() {
     { path: '/about', label: 'About' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/sns', label: 'SNS' },
-    { path: '/works', label: 'Works' },
     { path: '/contact', label: 'Contact' },
   ]
 

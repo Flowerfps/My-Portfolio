@@ -4,7 +4,6 @@ import Top from './pages/Top'
 import About from './pages/About'
 import Gallery from './pages/Gallery'
 import SNS from './pages/SNS'
-import Works from './pages/Works'
 import Contact from './pages/Contact'
 import './App.css'
 
@@ -19,7 +18,6 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/sns" element={<SNS />} />
-            <Route path="/works" element={<Works />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

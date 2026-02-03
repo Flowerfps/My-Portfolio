@@ -49,7 +49,7 @@ function Contact() {
     <div className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-4 py-20">
         <h2 className="text-3xl md:text-4xl font-rounded font-normal text-center mb-12 text-gray-900 tracking-tight">
-          お仕事のご依頼はこちら
+          問い合わせ
         </h2>
         <form 
           onSubmit={handleSubmit}
