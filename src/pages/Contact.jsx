@@ -46,9 +46,9 @@ function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-white py-20 px-4">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-rounded font-medium text-center mb-12 text-primary tracking-tight">
+    <div className="min-h-screen bg-white">
+      <div className="max-w-2xl mx-auto px-4 py-20">
+        <h2 className="text-3xl md:text-4xl font-rounded font-normal text-center mb-12 text-gray-900 tracking-tight">
           お仕事のご依頼はこちら
         </h2>
         <form 
@@ -57,7 +57,7 @@ function Contact() {
           noValidate
         >
           <div className="mb-6">
-            <label htmlFor="name" className="block text-gray-700 font-medium mb-2 text-sm">
+            <label htmlFor="name" className="block text-gray-900 font-normal mb-2 text-sm">
               お名前
             </label>
             <input 
@@ -66,7 +66,7 @@ function Contact() {
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-primary transition-colors ${
+              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-gray-900 transition-colors bg-white ${
                 errors.name ? 'border-red-400' : ''
               }`}
               aria-invalid={!!errors.name}
@@ -79,7 +79,7 @@ function Contact() {
             )}
           </div>
           <div className="mb-6">
-            <label htmlFor="email" className="block text-gray-700 font-medium mb-2 text-sm">
+            <label htmlFor="email" className="block text-gray-900 font-normal mb-2 text-sm">
               メールアドレス
             </label>
             <input 
@@ -88,7 +88,7 @@ function Contact() {
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-primary transition-colors ${
+              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-gray-900 transition-colors bg-white ${
                 errors.email ? 'border-red-400' : ''
               }`}
               aria-invalid={!!errors.email}
@@ -101,7 +101,7 @@ function Contact() {
             )}
           </div>
           <div className="mb-8">
-            <label htmlFor="message" className="block text-gray-700 font-medium mb-2 text-sm">
+            <label htmlFor="message" className="block text-gray-900 font-normal mb-2 text-sm">
               お問い合わせ内容
             </label>
             <textarea 
@@ -110,7 +110,7 @@ function Contact() {
               rows="6"
               value={formData.message}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-primary transition-colors resize-none ${
+              className={`w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-gray-900 transition-colors resize-none bg-white ${
                 errors.message ? 'border-red-400' : ''
               }`}
               aria-invalid={!!errors.message}
@@ -125,7 +125,7 @@ function Contact() {
           <button 
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary text-white px-8 py-4 text-base font-medium hover:bg-primary-dark transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full border border-gray-900 text-gray-900 px-8 py-4 text-sm font-normal hover:bg-gray-900 hover:text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? '送信中...' : '送信する'}
           </button>

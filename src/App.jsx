@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <main className="pt-20">
+        <main className="pt-16">
           <Routes>
             <Route path="/" element={<Top />} />
             <Route path="/about" element={<About />} />
@@ -28,4 +28,4 @@ function App() {
   )
 }
 
-export default App;
+export default App
